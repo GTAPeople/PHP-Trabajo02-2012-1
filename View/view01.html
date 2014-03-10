@@ -1,0 +1,39 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta  charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <title>Aplicación01</title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            <?php echo $pScript ?>
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Aplicación01</h1>
+            <h2>Ingresa nombres de productos con sus respectivas unidades</h2>
+        </header>
+        <section>
+            
+                <form id="form1" name="form1" method="post" action="">
+                    <?php for($i=0; $i < $cantidad; $i++){  ?>
+                    Producto<?php echo $i+1; ?>: <input type="text" name="producto<?php echo $i ?>" id="numero1" placeholder="Ingresa un producto" required/><br>
+                    Cantidad: <input type="number" name="cantidad<?php echo $i ?>" id="numero2" min="0" value="0" required /><br><br>
+                    <?php } ?>
+                    <input type="submit" name="graficar" id="calcular" value="Graficar">
+                    <input type="hidden" name="apps" value="app1" />
+                    <input type="hidden" name="cantidad" value="<?php echo $cantidad ?>" />
+                    
+                </form>
+        </section>
+        <section>
+                <div id="chart_div" ></div>
+        </section>
+
+    </body>
+</html>

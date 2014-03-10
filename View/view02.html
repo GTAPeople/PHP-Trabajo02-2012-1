@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta  charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <title>Aplicación02</title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            <?php echo $cScript ?>
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Aplicación02</h1>
+            <h2>LLena los campos colocando la cantidad de ventas en cada mes</h2>
+        </header>
+        <section>
+                <form id="form1" name="form1" method="post" action="">
+                    Enero: <input type="number" name="enero" min="0" />
+                    Febrero: <input type="number" name="febrero" min="0" /> <br><br>
+                    Marzo: <input type="number" name="marzo" min="0" />
+                    Abril: <input type="number" name="abril" min="0" /><br><br>
+                    Mayo: <input type="number" name="mayo" min="0" />
+                    Junio: <input type="number" name="junio" min="0" /><br><br>
+                    Julio: <input type="number" name="julio" min="0" />
+                    Agosto: <input type="number" name="agosto" min="0" /><br><br>
+                    Setiembre: <input type="number" name="setiembre" min="0" />
+                    Octubre: <input type="number" name="octubre" min="0" /><br><br>
+                    Noviembre: <input type="number" name="noviembre" min="0" />
+                    Diciembre: <input type="number" name="diciembre" min="0" /><br><br>
+                    <input type="submit" name="graficar" id="calcular" value="Graficar">
+                    <input type="hidden" name="apps" value="app2" />
+                </form>            
+        </section>
+        
+        <section>
+            <div id="chart_div" ></div>
+        </section>
+    </body>
+</html>

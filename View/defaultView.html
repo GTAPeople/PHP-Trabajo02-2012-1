@@ -1,0 +1,33 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta  charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <title>Trabajo02</title>
+    </head>
+    <body>
+        <header>
+            <h1>Trabajo02</h1>
+            <h2>Elige la aplicación a la que deseas navegar</h2>
+            <blockquote>
+            <br>Aplicación 1: Ingresa la cantidad de productos para generar un gráfico tipo Pie.<br>
+            <br>Aplicación 2: Generarás un gráfico de barras. <br>
+            <br>Aplicación 3: Generarás una cantidad de puntos con posiciones aleatorias. <br>
+            </blockquote>
+        </header>
+        <section>
+                <form id="form1" name="form1" method="post" action="?opcion=ir">
+                    <input TYPE="radio" NAME="apps" VALUE="app1" checked>Aplicación 1
+                    <input type="number" name ="cantidad" id="cantidad" min="1" value="1" ><br>
+                        <br><INPUT TYPE="radio" NAME="apps" VALUE="app2">Aplicación 2<br>
+                        <br><INPUT TYPE="radio" NAME="apps" VALUE="app3">Aplicación 3<br>
+                        
+                        <br><input type="submit" name="Ir" id="Ir" value="Ir">
+                </form>
+        </section>
+    </body>
+</html>

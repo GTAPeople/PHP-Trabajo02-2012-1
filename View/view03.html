@@ -1,0 +1,30 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta  charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <title>Aplicación03</title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            <?php echo $tScript ?>
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Aplicación03</h1>
+            <h2>Llena el campo colocando la cantidad de puntos que desees ver</h2>
+        </header>
+        <section>
+                <form id="form1" name="form1" method="post" action="">
+                    Puntos: <input type="number" name="puntos" min="1" required /><br><br>
+                    <input type="submit" name="graficar" id="calcular" value="Graficar">
+                    <input type="hidden" name="apps" value="app3" />
+                </form>
+        </section>
+        <div id="chart_div" style="width: 800px; height: 600px; margin: 0 auto"></div> <br />
+    </body>
+</html>
